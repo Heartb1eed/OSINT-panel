@@ -1,0 +1,59 @@
+body {
+    background: url('bg.gif');
+    background-position:center center;
+    background-repeat:no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.waviy {
+  position: relative;
+  -webkit-box-reflect: below -35px linear-gradient(transparent, rgba(0,0,0,.1));
+  font-size: 60px;
+}
+
+.waviy span {
+  font-family: 'Alfa Slab One', cursive;
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+  animation: waviy 2.3s infinite;
+  animation-delay: calc(.2s * var(--i));
+}
+
+.shadow_osint {
+  text-shadow: 4px 4px 2px rgb(189 22 22 / 88%)
+}
+
+.shadow_osint_text {
+  text-shadow: 2px 2px 1px rgb(24 23 23 / 78%)
+}
+
+.text_color {
+  color: #cbcaca;
+}
+
+.text_px {
+  font-size: 1.6em;
+}
+
+@keyframes waviy {
+  0%,40%,100% {
+    transform: translateY(0)
+  }
+  20% {
+    transform: translateY(-20px)
+  }
+}
+
